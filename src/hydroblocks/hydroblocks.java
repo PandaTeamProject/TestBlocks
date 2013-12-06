@@ -19,6 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod ( modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION )
 @NetworkMod ( channels = {ModInfo.CHANNEL}, clientSideRequired = true, serverSideRequired = true )
@@ -40,6 +41,8 @@ public static void preInit (FMLPreInitializationEvent event ) {
 
 @EventHandler
 public static void init ( FMLInitializationEvent event ) {
+	
+	LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
 
 		LogHelper.log(Level.INFO, "Preparing items");
 		Items.init();
