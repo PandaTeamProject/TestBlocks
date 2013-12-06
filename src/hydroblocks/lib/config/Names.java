@@ -14,5 +14,10 @@ public static final String tutTool_name = "Tutorial Tool";
 public static final String tutBlock_unlocalizedName = "tutorialBlock";
 public static final String tutBlock_name = "Tutorial Block";
 
+public static final String mixerBlock_unlocalizedName = "hydromixerBlock";
+public static final String mixerBlock_name = "Hydro Mixer";
+
+
+
 
 }

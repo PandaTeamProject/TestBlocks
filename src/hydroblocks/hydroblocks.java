@@ -36,6 +36,20 @@ public static void preInit (FMLPreInitializationEvent event ) {
 	LogHelper.init();
 	ConfigHandler.init(event.getSuggestedConfigurationFile());
 	
+	LogHelper.log(Level.INFO, "Preparing items");
+	Items.init();
+	Items.addNames();
+	LogHelper.log(Level.INFO, "Items loaded");
+
+	LogHelper.log(Level.INFO, "Preparing blocks");
+	Blocks.init();
+	Blocks.addNames();
+	LogHelper.log(Level.INFO, "Blocks loaded");
+
+	LogHelper.log(Level.INFO, "Preparing recipes");
+	Recipes.init();
+	LogHelper.log(Level.INFO, "Recipes loaded");
+	
 
 }
 
@@ -44,19 +58,7 @@ public static void init ( FMLInitializationEvent event ) {
 	
 	LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
 
-		LogHelper.log(Level.INFO, "Preparing items");
-		Items.init();
-		Items.addNames();
-		LogHelper.log(Level.INFO, "Items loaded");
-
-		LogHelper.log(Level.INFO, "Preparing blocks");
-		Blocks.init();
-		Blocks.addNames();
-		LogHelper.log(Level.INFO, "Blocks loaded");
-
-		LogHelper.log(Level.INFO, "Preparing recipes");
-		Recipes.init();
-		LogHelper.log(Level.INFO, "Recipes loaded");
+		
 		}
 
 @EventHandler

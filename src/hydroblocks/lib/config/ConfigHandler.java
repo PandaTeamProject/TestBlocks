@@ -20,6 +20,9 @@ public class ConfigHandler {
 		
 		Ids.tutBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.tutBlock_name, 
 		Ids.tutBlock_default).getInt();
+		
+		Ids.mixerBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.mixerBlock_name, 
+		Ids.mixerBlock_default).getInt();
 
 		Ids.tutItem_actual = config.getItem(config.CATEGORY_ITEM, Names.tutItem_name, 
 		Ids.tutItem_default).getInt() - 256;
