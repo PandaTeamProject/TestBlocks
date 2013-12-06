@@ -1,0 +1,18 @@
+[
+{
+"modid": "HydroBlocks",
+"name": "HydroBlocks",
+"description": "HydroBlocks by Panda Team",
+"version": "T0.0.1",
+"url": "https://github.com/PandaTeam",
+"authorList": [
+"Panda Team"
+],
+"credits": "Thank you choc chip cookies",
+"logoFile": "",
+"screenshots": [],
+"dependencies": ["forge-9.10.0.789"
+],
+"mcversion": "1.6.2"
+}
+]
