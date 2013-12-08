@@ -14,7 +14,13 @@ public static int tutBlock_actual;
 public static final int tutBlock_default = 3000;
 
 public static int mixerBlock_actual;
-public static final int mixerBlock_default = 3200;
+public static final int mixerBlock_default = 3001;
+
+public static int bombBlock_actual;
+public static final int bombBlock_default = 3002;
+
+public static int batteryBlock_actual;
+public static final int batteryBlock_default = 3003;
 
 
 }
