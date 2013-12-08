@@ -20,19 +20,23 @@ public class TileEntityBattery extends TileEntity {
 	}
 
 	public int isIdle() {
-		return current = 0;
+		return current = 100;
 		}
+	
+
 	
 	@Override
 	public void updateEntity() {
 		if (!worldObj.isRemote) {
 		
-			if (current >= 0 && current <= 100 ) {
+			if (current <= 100 ) {
+				worldObj.setBlockMetadataWithNotify(xCoord, yCoord, zCoord, 1, 3);
+			}
 			}
 			
 			current++;
 		}
-	}
+	
 	
 	@Override
 	public void writeToNBT (NBTTagCompound compound) {

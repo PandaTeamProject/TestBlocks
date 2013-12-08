@@ -20,6 +20,13 @@ public class ConfigHandler {
 		Booleans.hardRecipe_default).getBoolean(Booleans.hardRecipe_default);
 		
 		
+		//Items
+		Ids.tutItem_actual = config.getItem(config.CATEGORY_ITEM, Names.tutItem_name, 
+		Ids.tutItem_default).getInt() - 256;
+		
+		Ids.tutTool_actual = config.getItem(config.CATEGORY_ITEM, Names.tutTool_name, 
+		Ids.tutTool_default).getInt() - 256;
+		
 		//Blocks
 		Ids.tutBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.tutBlock_name, 
 		Ids.tutBlock_default).getInt();
@@ -32,13 +39,7 @@ public class ConfigHandler {
 		
 		Ids.batteryBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.batteryBlock_name,
 		Ids.batteryBlock_default).getInt();
-
-		//Items
-		Ids.tutItem_actual = config.getItem(config.CATEGORY_ITEM, Names.tutItem_name, 
-		Ids.tutItem_default).getInt() - 256;
 		
-		Ids.tutTool_actual = config.getItem(config.CATEGORY_ITEM, Names.tutTool_name, 
-		Ids.tutTool_default).getInt() - 256;
 
 		config.save();
 		

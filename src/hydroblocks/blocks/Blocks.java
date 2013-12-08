@@ -1,5 +1,6 @@
 package hydroblocks.blocks;
 
+import hydroblocks.blocks.tileentities.TileEntityBattery;
 import hydroblocks.blocks.tileentities.TileEntityBomb;
 import hydroblocks.lib.config.Ids;
 import hydroblocks.lib.config.Names;
@@ -32,10 +33,12 @@ public static void addNames() {
 LanguageRegistry.addName(block, Names.tutBlock_name);
 LanguageRegistry.addName(mixerBlock, Names.mixerBlock_name);
 LanguageRegistry.addName(bombBlock, Names.bombBlock_name);
+LanguageRegistry.addName(batteryBlock, Names.batteryBlock_name);
 }
 
 public static void registerTileEntities() {
 	GameRegistry.registerTileEntity(TileEntityBomb.class, Names.bombTile);
+	GameRegistry.registerTileEntity(TileEntityBattery.class, Names.batteryTile);
 }
 
 
